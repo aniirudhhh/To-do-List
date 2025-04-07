@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/flh-font');
+@import url('https://fonts.cdnfonts.com/css/ariel-script');
+@import url('https://fonts.cdnfonts.com/css/rabbito');
+@import url('https://fonts.cdnfonts.com/css/djb-just-an-outty');
+@import url('https://fonts.cdnfonts.com/css/comic-cheese');
+@import url('https://fonts.cdnfonts.com/css/marinthea');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eac2cd;
+}
+h1{
+  font-family: 'DJB Just an Outty', sans-serif;
+
+  letter-spacing: 1rem;
+  color: #fb6f92;
+  text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ff5d8f;
+  border-radius: 10px;
+  height: 350px;
+  width: 300px;
+  background-color: #ffb3c6;
+  overflow: hidden;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#task-box {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #ff5d8f;
+  border-radius: 10px;
+  background-color: #ffcad4;
+  padding: 5px;
+  color: #ff0a54;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+#input-box {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  border: 1px solid #800f2f;
+  border-radius: 5px;
+  width: 100%;
+  color: #ff4d6d;
+  background-color: #ffc2d4;
+}
+
+#input-box:focus {
+  outline: none;
+}
+#input-box::placeholder{
+  color: #f684a1;
+}
+
+input[type="checkbox"] {
+  accent-color: #c9184a;
+}
+
+#btn {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border: 1px solid #590d22;
+  border-radius: 5px;
+  background-color: #f54574;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #ff0a54;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.clock {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  color: #ff4d6d;
+  font-family: Poppins;
+  background-color: #ffb3c6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.delete-btn {
+
+  background-color: #ff0a54;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #555;
+  font-family: 'Marinthea', sans-serif;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer:hover {
+  opacity: 1;
+}
+
+.footer .heart {
+  color: red;
+  animation: pulse 1s infinite;
+  display: inline-block;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
